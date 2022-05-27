@@ -29,5 +29,8 @@
   },
   "bugs": {
     "url": "https://github.com/coding-boot-camp/solid-broccoli/issues"
+  },
+  "dependencies": {
+    "@apollo/react-hooks": "^4.0.0"
   }
 }
