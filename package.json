@@ -1,4 +1,5 @@
 {
+  "homepage": "http://jrwj97.github.io/23MERNchallenge",
   "name": "googlebooks-app",
   "version": "1.0.0",
   "description": "",
@@ -8,13 +9,16 @@
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build",
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "gh-pages": "^4.0.0"
   },
   "repository": {
     "type": "git",
@@ -22,6 +26,5 @@
   },
   "bugs": {
     "url": "https://github.com/coding-boot-camp/solid-broccoli/issues"
-  },
-  "homepage": "https://github.com/coding-boot-camp/solid-broccoli#readme"
+  }
 }
